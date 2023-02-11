@@ -1,0 +1,215 @@
+.card{
+    width: calc(100% - 20px);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin:10px 5px 10px 15px;
+    padding:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $five-color;
+
+@include adaptTo ('tablet'){
+    width: calc(50% - 15px);
+    margin:10px 5px;
+}
+@include adaptTo ('desktop-m'){
+    width: calc(33% - 15px);
+    margin:10px 5px;
+}
+@include adaptTo ('desktop-l'){
+    width: calc(33% - 15px);
+    margin:10px 5px;
+}
+@include adaptTo ('desktop-xl'){
+    width: calc(33% - 15px);
+    margin:10px 5px;
+}
+
+   
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__title{
+        color:$two-color;
+        font-weight: bold;
+    }
+
+   
+
+    &__status{
+        
+        color:$five-color;
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: bold;
+        max-width: 70px;
+
+       &--Alive{
+        background-color:$eight-color;
+       }
+       &--Dead{
+        background-color:$nine-color;
+       }
+       &--unknown{
+        background-color:$one-color;
+       }
+    }
+
+
+    
+
+    &__main{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    &__img{
+        height: 140px;
+        margin-right: 15px;
+    }
+    
+    &__info-container{
+        display: flex;
+        flex-direction: column;
+        text-align:initial;
+        
+    }
+    &__info-title{
+        color:$one-color;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    &__info{
+        color:$four-color;
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: -5px;
+    }
+
+    &__link{
+        text-decoration: none;
+        font-weight: bold;
+        color:$two-color;
+        font-size: 12px;
+        padding: 10px 0;
+        border-radius: 100px;
+        margin-bottom: 15px;
+        background: $three-color;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        margin:0 auto;
+
+    }
+
+    &__loc-title{
+        font-size: 18px;
+        font-weight: normal;
+        color: $two-color;
+        padding: 10px;
+        border-radius: 30px;
+        align-items: center;
+        background: $seven-color;
+        width: 90%;
+        margin: 15px;
+        text-align: center;
+    }
+
+    &__loc-spec{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 15px;
+
+    }
+
+    &__loc-spec--typeA{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-right: 1px solid $one-color;
+        padding-right: 10px;
+    }
+
+    &__loc-spec--typeB{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    &__loc-titles{
+        color: $one-color;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    &__loc-cont{
+        font-size: 14px;
+        font-weight: normal;
+        color:$four-color;
+    }
+
+    &__temp-title{
+        font-size: 18px;
+        font-weight: normal;
+        color: $two-color;
+        padding: 10px;
+        border-radius: 30px;
+        align-items: center;
+        background: $seven-color;
+        width: 90%;
+        margin: 15px;
+        text-align: center;
+    }
+
+    &__date-title{
+        color: $one-color;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    &__date-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    &__date-info{
+        color: $four-color;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &__link--epi{
+        text-decoration: none;
+        font-weight: bold;
+        color:$two-color;
+        font-size: 12px;
+        padding: 5px 30px;
+        border-radius: 100px;
+        margin-bottom: 10px;
+        background: $three-color;
+        width: 90%;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+
+    &__epi-btns{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:10px;
+        width: 90%;
+    }
+}

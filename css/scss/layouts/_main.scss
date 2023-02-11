@@ -1,0 +1,29 @@
+.main {
+  background-color: $five-color;
+  width: 100%;
+ 
+
+  &__description {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0px;
+  }
+
+  &__text {
+    font-size: 16px;
+    text-align: center;
+    @include adaptTo("not-mobile") {
+      font-size: 20px;
+    }
+  }
+
+  &__line {
+    border-bottom: 2px solid $one-color;
+    width: 130px;
+    margin: 0 auto;
+  }
+
+  
+
+}

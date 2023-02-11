@@ -1,0 +1,47 @@
+.nav{
+
+padding-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+    @include adaptTo("not-mobile") {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      background-color: $fifty-color;
+      padding: 10px 0px 10px 0px;
+    }
+
+    @include adaptTo("desktop-xl") {
+      border-radius: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        color: $two-color;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 50px 10px;
+        border-radius: 100px;
+        display: block;
+        margin-bottom: 55px;
+        background: $three-color;
+        width: 70vw;
+        text-align: center;
+        cursor: pointer;
+        margin: 30px;
+    
+        @include adaptTo("tablet") {
+          width: 50vw;
+          font-size: 30px;
+          padding: 40px 10px;
+          margin: 50px 20px 50px 20px;
+        }
+      }
+   
+  
+}

@@ -1,0 +1,47 @@
+.header{
+    background-color: $two-color;
+    text-align: center;
+    color: $five-color;
+    padding:5px;
+    
+
+    &__title{
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 16px;
+
+        
+    }
+
+    &__subtitle{
+        font-weight: bold;
+        font-size: 12px;
+        margin-top:-5px;
+        
+    }
+
+
+    &--home{
+        background-image:url("../../assets/images/rick.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 100vh;
+
+        @include adaptTo("desktop-xl") {
+            border-radius: 0 0 20px 20px;
+        }
+
+        .header__title{
+            font-size: 36px;
+            font-weight: normal;
+            padding-top: 120px;
+        }
+
+        .header__subtitle{
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+}
+

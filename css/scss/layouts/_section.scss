@@ -1,0 +1,57 @@
+.section{
+   width: 100%;
+
+    &__title{
+        color:$two-color;
+        font-weight: bold;
+        text-align: center;
+        background-color: $sixty-color;
+    }
+
+    &__more{
+        text-decoration: none;
+        color:$five-color;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 0;
+        border-radius: 100px;
+        display: flex;
+        justify-content:center;
+        background: $two-color;
+        width: 40vw;
+        text-align: center;
+        align-items: center;
+        margin: 15px auto;
+        border:none;
+    }
+
+    &__main{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+  
+    }
+}
+
+/* @include adaptTo("tablet"){
+            display: grid;
+            grid-template-columns: 50% 50%; 
+        }
+        
+        @include adaptTo("desktop-m"){
+            display: grid;
+            grid-template-columns: 33% 33% 33%;    
+        }
+       
+        @include adaptTo("desktop-l"){
+            display: grid;
+            grid-template-columns: 33% 33% 33%;    
+        }
+
+        @include adaptTo("desktop-xl"){
+            display: grid;
+            grid-template-columns: 33% 33% 33%;    
+        }
+        */

@@ -1,0 +1,224 @@
+.detail {
+  width: 100%;
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include adaptTo("not-mobile") {
+      background-color: $twelve-color;
+    }
+
+    &__info {
+      width: 100%;
+
+      @include adaptTo("not-mobile") {
+        background-color: $five-color;
+        margin-top: 50px;
+        padding-top: 50px;
+        width: 100vw;
+      }
+
+      @include adaptTo("desktop-m") {
+        background-color: $five-color;
+        margin-top: 150px;
+        padding-top: 50px;
+        width: 100vw;
+
+      }
+    }
+  }
+
+  &__header--img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    border: 2px solid $sixty-color;
+    align-items: center;
+    margin-top: 15px;
+
+    @include adaptTo("not-mobile") {
+      margin: 40px 40px 15px 40px;
+    }
+  }
+
+  &__header--title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $two-color;
+    margin-top: 15px;
+
+    @include adaptTo("not-mobile") {
+      margin: 0 auto;
+    }
+  }
+
+  &__status-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px 1px;
+  }
+
+
+
+  &__status-container-normal {
+    font-size: 14px;
+    font-weight: normal;
+    color: $two-color;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-align: center;
+    background-color: $seven-color;
+    margin: 15px;
+
+       &--alive{
+        background-color:$eight-color;
+        font-size: 14px;
+        font-weight: normal;
+        color: $two-color;
+        padding: 10px 20px;
+        border-radius: 100px;
+        text-align: center;
+        margin: 15px;
+       }
+       &--dead{
+        background-color:$nine-color;
+        font-size: 14px;
+        font-weight: normal;
+        color: $two-color;
+        padding: 10px 20px;
+        border-radius: 100px;
+        text-align: center;
+        margin: 15px;
+       }
+       &--unknown{
+        background-color:$eleven-color;
+        font-size: 14px;
+        font-weight: normal;
+        color: $two-color;
+        padding: 10px 20px;
+        border-radius: 100px;
+        text-align: center;
+        margin: 15px;
+       }
+    }
+  
+
+
+  &__info-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 15px;
+    color: $eleven-color;
+    width: 100px;
+  }
+
+  &__info--subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: $four-color;
+    padding: 5px 10px;
+    border-radius: 100px;
+    align-items: center;
+    background: $seven-color;
+    width: 90vw;
+    margin: 15px;
+    @include adaptTo ("tablet"){
+        max-width: 100%;
+    }
+    @include adaptTo("desktop-m") {
+      width: 100%;
+    }
+  }
+
+  &__info--localization {
+    font-size: 18px;
+    font-weight: normal;
+    color: $two-color;
+    padding:5px 10px;
+    border-radius: 100px;
+    background: $seventy-color;
+    width: 90%;
+    margin: 15px;
+    @include adaptTo("desktop-m") {
+      width: 100%;
+    }
+  }
+
+  &__container-b {
+    @include adaptTo("desktop-m") {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  &__container--group {
+    width: 190px;
+    margin:15px;
+  }
+
+  &__episode-btn {
+    font-size: 18px;
+    font-weight: normal;
+    color: $two-color;
+    padding: 10px 10px;
+    border-radius: 100px;
+    display: block;
+    background: $seventy-color;
+    width: 60px;
+    height: 40px;
+    margin: 15px;
+    border: none;
+  }
+
+  &__info--container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @include adaptTo("not-mobile") {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  &__title{
+    font-size: 18px;
+    font-weight: bold;
+    color: $two-color;
+    padding: 15px;
+    border-radius: 20px;
+    align-items: center;
+    background: $seven-color;
+    width: 90%;
+    margin: 15px;
+    text-align: center;
+
+        @include adaptTo("not-mobile") {
+        font-size: 40px;
+        font-weight: bold;
+        color: $two-color;
+        background: none;
+        border-radius: 30px;
+        align-items: center;
+        margin-top:100px;
+        height: 100vh;
+
+        }
+  }
+
+  &__img--character{
+    width: 90px;
+    height: 90px;
+    border-radius: 150px;
+    border: 2px solid $sixty-color;
+    align-items: center;
+    margin: 15px 10px;
+  }
+}
